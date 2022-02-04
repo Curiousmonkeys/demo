@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="demcss/demo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="demcss/addCssByjs.css" />
+  </head>
+  <body>
+    <div id="sech">
+      <div id="bg"></div>
+      <form
+        class="center"
+        onsubmit="return false"
+        action="http://www.baidu.com/s"
+        target="_blank"
+      >
+        <div id="img_ipt" class="v-center">
+          <div id="img"><img src="demimgs/baidu.png" alt="" /></div>
+          <div id="ipt">
+            <input
+              id="input"
+              autofocus="autofocus"
+              autocomplete="off"
+              name="wd"
+              type="text"
+              value=""
+              placeholder="搜索网页"
+            />
+          </div>
+        </div>
+        <button id="seach" type="submit" class="fa fa-search"></button>
+      </form>
+      <ul id="tipsBox" class="center">
+
+      </ul>
+    </div>
+    <div id="functionBox">
+      <div id="barsBox">
+        <span id="bars_1"></span><span id="bars_2"></span
+        ><span id="bars_3"></span>
+      </div>
+      <div id="refresh">
+        <span title="随机壁纸" class="fa fa-refresh"></span>
+      </div>
+    </div>
+    <div id="nav">
+      <div id="navNotice" class="center">
+        <span class="fa fa-warning"></span> <span>什么都没有哦</span>
+      </div>
+    </div>
+    <div id="notice" class="center">
+      <span class="fa fa-times-circle"></span>
+      <ul>
+        <li>小屏幕暂未适配哦！推荐使用1920*1080屏幕</li>
+      </ul>
+    </div>
+    <script src="demjs/demo.js"></script>
+  </body>
+</html>

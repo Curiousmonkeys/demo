@@ -1,0 +1,29 @@
+.bars_2Moverover {
+  opacity: 0;
+}
+.bars_1Moverover,.bars_3Moverover {
+  top: 10px !important;
+}
+.bars_1Moverover{transform: rotate(45deg);}
+.bars_3Moverover{transform: rotate(-45deg);}
+.funcMove {
+  right: 16% !important;
+}
+.navWidth {
+  width: 15% !important;
+}
+.removeAnimation {
+  animation: removeEle .3s linear 
+}
+
+@keyframes removeEle {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scaleX(1.15);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+.h-center {
+  margin: 0 auto;
+}
+.v-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+a {
+  outline: 0;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+input,
+button {
+  outline: none;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+html,
+body {
+  font: 400 16px "Open Sans", Arial, sans-serif;
+  user-select: none;
+  box-sizing: border-box;
+  background-color: black;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+#sech {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+}
+#bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  background: url(../demimgs/bg.jpg) no-repeat 0/cover;
+  /* filter: blur(15px); */
+  z-index: 0;
+}
+
+#sech form {
+  top: 30%;
+  width: 60%;
+  height: 52px;
+  max-width: 590px;
+  min-width: 350px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 3.5px 3.5px 4px rgba(0, 0, 0, .5);
+  border-radius: 45px;
+}
+#sech form:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#img_ipt {
+  margin-left: 15px;
+  width: 100%;
+  /* background-color: black; */
+}
+#img,
+#ipt {
+  display: inline-block;
+  /* position: inherit; */
+}
+#img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  line-height: 52px;
+}
+#ipt {
+  width: 75%;
+}
+#ipt input {
+  width: 100%;
+  height: 40px;
+  border: transparent;
+  /* line-height: 52px; */
+  background-color: transparent;
+  font-size: 21px;
+}
+#seach {
+  position: absolute;
+  width: 11%;
+  height: 52px;
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 0 40px 40px 0;
+  right: 0;
+  display: inline-block;
+  height: 52px;
+}
+#seach:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* 功能区 */
+#functionBox {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  transition: right .3s linear;
+}
+#barsBox {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  /* background-color: red; */
+}
+#bars_1,#bars_2,#bars_3 {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 3px;
+  top: 5px;
+  border-radius: 3px;
+  transition: transform .3s linear,
+    top .3s linear,
+    opacity .3s linear;
+}
+#bars_1 {
+  height: 3px;
+}
+#bars_2 {
+  top: 11px;
+}
+#bars_3 {
+  top: 15px;
+}
+#refresh {
+  /* background-color: green; */
+  margin-top: 5px;
+  font-size: 18px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+#barsBox:hover span {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#refresh:hover span {
+  color: rgba(255, 255, 255, 0.8);
+  user-select: none;
+}
+#nav {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 0;
+  height: 90%;
+  background-color: white;
+  box-shadow: -5px 4px 4px rgba(0, 0, 0, .5);
+  border-radius: 40px 0 0 40px;
+  transition: width .3s linear;
+}
+#navNotice {
+  width: 80%;
+  max-width: 120px;
+  display: none;
+}
+#notice {
+  width: 250px;
+  height: 200px;
+  background-color: white;
+  text-indent: 16px;
+  padding: 45px;
+  box-sizing: border-box;
+  border-radius: 45px;
+  display: none;
+}
+#notice li {
+  list-style: disc;
+  list-style-position: inside;
+  text-decoration: underline;
+}
+#notice span {
+  position: absolute;
+  top: 20px;
+  right: 26px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, .5);
+}
+#tipsBox{
+  position: absolute;
+  width: 85%;
+  max-width: 450px;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 260px;
+  top: 393.5px;   
+  box-sizing: border-box;
+  display: none;
+}
+#tipsBox li {
+  padding: 3px 20px;
+  /* padding-left: 20px; */
+  line-height: 20px;
+  height: 20px;
+}
+#tipsBox li:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
