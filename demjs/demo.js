@@ -220,7 +220,7 @@ function tipsBg(count, tipsBox) {
   lis[count].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
 }
 function getRequest(itpValue, callback) {
-  var url = `http://112.74.44.5:33768/my/demjs/data.php?value=${itpValue}`;
+  var url = `https://112.74.44.5:33768/my/demjs/data.php?value=${itpValue}`;
   var xhr = new XMLHttpRequest();
   xhr.open("get", url);
   xhr.send();
